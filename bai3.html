@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .article {
+        display: flex;
+        margin: 20px;
+        border: 1px solid #333333;
+        padding: 10px;
+      }
+
+      .article img.avatar {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        vertical-align: top;
+        margin-right: 5px;
+      }
+
+      .article-content {
+        flex: 1;
+        position: relative;
+      }
+
+      .article-content h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+
+      .article-content p {
+        font-size: 16px;
+        color: #999999;
+      }
+
+      .article-content b {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333333;
+        display: block;
+        margin-top: 10px;
+      }
+
+      .article-content p:last-child {
+        font-size: 16px;
+        color: #333333;
+        text-align: justify;
+      }
+
+      .article-category {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .author-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .author-info img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article">
+      <div class="article-content">
+        <span class="article-category">Basketball</span>
+        <img
+          src="https://thethaodonga.com/wp-content/uploads/2022/03/anh-dep-choi-bong-ro-5.jpg"
+          alt="Basketball Player"
+        />
+        <p>04 June 2023</p>
+        <b
+          >5 Exercises Basketball Players Should Be Using To Develop Strength</b
+        >
+        <p>
+          This article was written by Jake Willhoite from Healthlisted.com
+          Strength in basketball isn't all about a massive body mass or ripped
+          muscles.
+        </p>
+        <div class="author-info">
+          <img
+            src="https://www.w3schools.com/howto/img_avatar.png"
+            alt="Avatar"
+            class="avatar"
+          />
+          <p>Jake Will</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

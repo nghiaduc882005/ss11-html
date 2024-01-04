@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Định dạng thanh điều hướng */
+      .navbar {
+        background-color: #f0f0f0; /* Màu nền */
+        height: 50px; /* Chiều cao */
+        display: flex; /* Hiển thị dạng flexbox */
+        align-items: center; /* Căn giữa các mục theo chiều dọc */
+        justify-content: space-between; /* Canh giữa các mục theo chiều ngang */
+        padding: 0 20px; /* Đệm trên, dưới, trái, phải */
+      }
+
+      /* Định dạng các liên kết trong thanh điều hướng */
+      .navbar a {
+        color: #333333; /* Màu chữ */
+        text-decoration: none; /* Bỏ gạch chân */
+        font-weight: bold; /* In đậm */
+        margin: 0 15px; /* Khoảng cách giữa các liên kết */
+      }
+
+      /* Thêm hiệu ứng khi di chuột qua các liên kết */
+      .navbar a:hover {
+        color: #000000; /* Màu chữ khi di chuột */
+        border-bottom: 2px solid #000000; /* Thêm gạch dưới khi di chuột */
+      }
+
+      /* Định dạng ô tìm kiếm */
+      .search-input {
+        position: relative;
+        padding: 5px; /* Đệm trong ô tìm kiếm */
+      }
+
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 8px;
+      }
+
+      .search-input input {
+        padding: 5px 30px 5px 40px; /* Đặt khoảng trống cho biểu tượng tìm kiếm */
+        width: 150px; /* Độ rộng của ô tìm kiếm */
+        border: none; /* Loại bỏ đường viền */
+      }
+
+      /* Định dạng nút tìm kiếm */
+      .search-button {
+        padding: 5px 10px; /* Đệm trong nút tìm kiếm */
+        background-color: #333333; /* Màu nền của nút */
+        color: #ffffff; /* Màu chữ của nút */
+        border: none; /* Loại bỏ viền */
+        cursor: pointer; /* Biến đổi con trỏ thành bàn tay khi di chuột */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tạo thanh điều hướng bằng thẻ <div> và <a> -->
+    <div class="navbar">
+      <h2>Sport News</h2>
+      <a href="home.html">Home</a>
+      <a href="category.html">Category</a>
+      <a href="trending-news.html">Trending News</a>
+      <a href="recent-news.html">Recent News</a>
+      <a href="clubs-ranking.html">Clubs Ranking</a>
+      <a href="sports-article">Sports Article</a>
+
+      <!-- Thêm ô tìm kiếm và nút tìm kiếm -->
+      <div class="search-input">
+        <input type="text" placeholder="Search" class="Search" />
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+  </body>
+</html>

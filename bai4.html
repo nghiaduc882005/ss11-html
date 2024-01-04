@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Header</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #fadcd9;
+        padding: 20px;
+      }
+
+      .navigation,
+      .profile {
+        align-self: flex-start;
+      }
+
+      .navigation {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        margin-top: -20px;
+      }
+
+      .navigation a {
+        text-decoration: none;
+        color: #333;
+        margin-left: 20px;
+        font-weight: bold;
+        white-space: nowrap; /* Ngăn chữ bị ngắt dòng */
+      }
+
+      .profile {
+        text-align: left;
+      }
+
+      .profile h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      .profile h2 {
+        margin: 0;
+        color: #555;
+      }
+
+      .profile p {
+        margin: 10px 0;
+      }
+
+      .profile button {
+        background-color: #ff5733;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      .profile-pic {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="profile">
+        <h1>Hi, I am John,</h1>
+        <h2>Creative Technologist</h2>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit pollit. Exercitation
+          veniam consequat sunt nostrud amet
+        </p>
+        <button>Download Resume</button>
+      </div>
+      <div class="navigation">
+        <a href="#">Works</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      <img
+        src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"
+        alt="John's Profile Picture"
+        class="profile-pic"
+      />
+    </div>
+  </body>
+</html>
